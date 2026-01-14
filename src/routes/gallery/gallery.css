@@ -1,0 +1,61 @@
+.galleryContainer{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    
+}
+
+.galleryMasonry {
+   column-count: 3;
+   column-gap: 16px;
+   max-width: 1000px;
+   width:100%;
+   padding: 16px;
+}
+
+.galleryMasonry img {
+    width:100%;
+     display:block;
+     margin-bottom:16px;
+    
+    border-radius: 10px;
+    break-inside: avoid;
+   
+}
+.imagePageContainer {
+    text-align: center;
+    padding: 24px;
+}
+.backLink{
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+    margin-bottom: 16px;
+    display:inline-block;
+}
+.backLink:hover{
+    color:rgb(82,126,82);
+}
+
+.imageWrapper{
+    margin-top:24px;
+}
+.fullImage{
+    max-width:100%;
+    max-height: 80vh;
+    border-radius:12px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media(max-width: 800px){
+    .galleryMasonry{
+        column-count: 2;
+    }
+}
+@media (max-width: 600px){
+    .galleryMasonry{
+        column-count:1;
+    }
+}

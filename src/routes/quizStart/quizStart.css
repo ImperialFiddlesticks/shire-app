@@ -1,0 +1,49 @@
+.quizContainer h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #3b5323;
+  margin-bottom: 8px;
+}
+
+.quizContainer h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #5a6f3b;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+.quizStartImage {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto 24px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease;
+}
+
+
+
+.quizStartButton {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 32px;
+  border-radius: 30px; /* Hobbit door shape */
+  border: 3px solid #7a9e7e;
+  background-color: #d9f0c5;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.quizStartButton:hover {
+  background-color: #c2e09e;
+  transform: scale(1.08);
+}
+.buttonIcon{
+    width:30px;
+    height: 30px;
+}

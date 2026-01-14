@@ -1,0 +1,130 @@
+.quizContainer{
+    display:flex;
+    flex-direction: column;
+     align-items: center;
+   
+   max-width: 700px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background-color: #f6f1e1; /* warm parchment */
+  border: 3px solid #7a9e7e; /* soft green */
+  border-radius: 40px; /* round like a Hobbit door */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  font-family: "Palatino Linotype", Georgia, serif; /* storybook font */
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.quizContainer::before,
+.quizContainer::after {
+  content: "🍃";
+  font-size: 2rem;
+  position: absolute;
+  color: #a3b18a;
+  top: 16px;
+}
+
+.quizContainer::before {
+  left: 16px;
+}
+
+.quizContainer::after {
+  right: 16px;
+}
+.quizQuestion{
+    justify-content: center;
+    
+}
+.quizQuestion h3{
+  font-size: 1.8rem;
+  color: #3b5323; /* dark earthy green */
+  text-align: center;
+  margin-bottom: 24px;
+  line-height: 1.4;
+
+}
+
+.quizAnswers{
+    display:flex;
+    flex-direction: column;
+    
+}
+.answerButton {
+ display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 14px;
+  border-radius: 25px;
+  border: 2px solid #7a9e7e; 
+  background-color: #fff8e7; 
+  cursor: pointer;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  font-family: "Georgia", serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.answerButton:hover{
+  background-color: #e3f0d6; 
+}
+
+.answerButton.idle {
+  background-color: #eee;
+ 
+}
+
+.answerButton.idle:hover {
+  background-color: #e3f0d6; 
+   transform:scale(1.03);
+}
+
+.answerButton.correct {
+background-color: #9fd5a1; /* soft green highlight */
+  border-color: #3b5323;
+  color: #1c2f0b;
+  transform: scale(1.05);
+}
+
+.answerButton.incorrect {
+  background-color: #f1b2a7; /* soft reddish highlight */
+  border-color: #8b1a1a;
+  color: #5a0c0c;
+   transform: scale(0.98);
+}
+
+
+.nextButton {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border-radius: 25px;
+  border: 2px solid #7a9e7e;
+  background-color: #d9f0c5;
+  font-weight: bold;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nextButton:hover {
+  background-color: #c2e09e;
+  transform: scale(1.05);
+}
+
+.scoreBox {
+    margin-top: 28px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #3b5323;
+  padding: 12px;
+  display:flex;
+  align-items: center;
+
+  
+}
+.goldIcon{
+  width:50px;
+  height:50px;
+  margin-left:20px;
+}
