@@ -12,7 +12,8 @@ function StartQuizButton() {
       className="quizStartButton"
       onClick={() => navigate({ to: "/quiz" })}
     >
-      Begin! <img alt="Dragon Icon" src="/dragon.png" className="buttonIcon" />
+      <p>Begin!</p>
+      <img alt="Dragon Icon" src="/dragon.png" className="buttonIcon" />
     </button>
   );
 }

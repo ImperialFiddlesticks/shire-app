@@ -8,9 +8,11 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <React.Fragment>
-      <div>
-        <header>Welcome</header>
-        <nav>
+      <div className="shireContainer">
+        <header className="shireHeader">
+          <h1>Welcome to the Shire</h1>
+        </header>
+        <nav className="shireNav">
           {" "}
           <Link className="navButton" to="/">
             Home

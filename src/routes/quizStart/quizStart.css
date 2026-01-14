@@ -25,7 +25,7 @@
 
 
 .quizStartButton {
-  display: block;
+  display: flex;
   margin: 0 auto;
   padding: 14px 32px;
   border-radius: 30px; /* Hobbit door shape */
@@ -43,7 +43,12 @@
   background-color: #c2e09e;
   transform: scale(1.08);
 }
+
+.quizStartButton p {
+  margin:5px;
+}
 .buttonIcon{
     width:30px;
     height: 30px;
+    
 }

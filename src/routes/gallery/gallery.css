@@ -1,8 +1,18 @@
 .galleryContainer{
     display:flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width:100%;
     
+}
+.galleryHeadline{
+    font-family: "Palatino Linotype", Georgia, serif;
+font-size: 1.8rem;
+  color: #3b5323; /* dark earthy green */
+  text-align: center;
+  margin: 24px;
+  line-height: 1.4;
 }
 
 .galleryMasonry {
