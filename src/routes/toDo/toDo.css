@@ -16,6 +16,13 @@
     margin: 10px;
     border-radius: 20px;
 }
+.toDoInput{
+    border: 2px solid #7a9e7e;
+    padding:10px;
+    margin: 10px;
+    border-radius: 7px;
+    display:flex;
+}
 .toDoForm{
     width: 300px;
     margin: 10px;
@@ -24,6 +31,28 @@
     align-items: center;
     
     min-height:500px;
+}
+.formButton {
+  background-color: #668669; 
+  color: white;               
+  width: 30px;                
+  height: 30px;
+  border-radius: 50%;         
+  font-weight: bold;
+  font-size: 24px;    
+  font-family: Arial, sans-serif;
+line-height: 1;   
+  border: none;               
+  cursor: pointer;            
+  display: flex;              
+  align-items: center;        
+  justify-content: center;    
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.2s;
+}
+
+.formButton:hover {
+  background-color: #5a7a5a; 
 }
 .droppableContent{
     display:flex;

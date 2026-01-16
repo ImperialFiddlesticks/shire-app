@@ -88,15 +88,17 @@ function Planner() {
         <div className="plannerContainer">
           <div className="taskBox">
             <div className="toDoForm">
+              <h3 className="toDoTitle">New Task</h3>
               <form className="toDoInput" onSubmit={handleAddItem}>
-                <h3 className="toDoTitle">New Task</h3>
                 <input
                   type="text"
                   value={newItem}
                   onChange={(e) => setNewItem(e.target.value)}
                   placeholder="Add a task..."
                 />
-                <button type="submit">Add</button>
+                <button className="formButton" type="submit">
+                  +
+                </button>
               </form>
               <Droppable id="newTaskBox">
                 <div className="itemsContainer">
