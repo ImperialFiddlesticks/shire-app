@@ -3,8 +3,10 @@
 @import url(./routes/quiz/quiz.css);
 @import url(./routes/quizStart/quizStart.css);
 @import url(./routes/toDo/toDo.css);
+@import url(./routes/game/game.css);
 @import "tailwindcss";
 @import "tw-animate-css";
+
 
 @custom-variant dark (&:is(.dark *));
 
