@@ -1,36 +1,70 @@
+
 .plannerContainer{
     width:100%;
-    height: 500px;
-  
+    height: auto;
+    min-height: 500px;
     display:flex;
     justify-content: space-around;
     
     
 }
+.taskBox{
+    display:flex;
+    flex-direction: column;
+    min-height: 500px;
+    border: 3px solid #7a9e7e;
+    margin: 10px;
+    border-radius: 20px;
+}
 .toDoForm{
     width: 300px;
-    border: 3px solid #7a9e7e;
     margin: 10px;
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    min-height:500px;
 }
-.toDoBox{
-    width: 300px;
-    border:3px solid #7a9e7e;
-    margin: 10px;
+.droppableContent{
     display:flex;
-    justify-content: center;
-}
-.doneBox{
-    width: 300px;
-    border: 3px solid #7a9e7e;
+    flex-direction: column;
     margin: 10px;
-    display:flex;
-    justify-content: center;
+    height: auto;
+    min-height:500px;
+    padding: 0;
 }
+
 .toDoTitle{
-    padding: 5px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0.5rem;
     font-family: "Palatino Linotype", Georgia, serif;
     font-size: 1.5rem;
     color: #3b5323;
+    border-bottom: 1px solid #ccc;
+    text-align:center; 
+}
+.itemsContainer{
+    flex:1 1 auto;
+    
+    padding: 0.5rem;
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.toDoItem{
+    width:150px;
+    height:50px;
+    border: 2px solid #7a9e7e;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    border-radius: 7px;
+    font-family: "Palatino Linotype", Georgia, serif;
+    color: #3b5323;
+    font-size:1.1rem;
 }
