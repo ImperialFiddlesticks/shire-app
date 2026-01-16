@@ -9,7 +9,7 @@ export const adventureScenes = {
     imageAlt: "A hobbit hole",
   },
   fork: {
-    text: "After following the road for a while you reach a fork in the road. The signpost points in two directions: Bree, and Old Forest.",
+    text: "After following the path for a while you reach a fork in the road. The signpost points in two directions: Bree, and Old Forest.",
     choices: [
       { text: "Follow the sign to Bree", next: "bree" },
       { text: "Follow the sign to the Old Forest", next: "oldForest" },
